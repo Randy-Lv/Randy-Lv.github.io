@@ -1,0 +1,132 @@
+﻿
+<div class="footer">
+    <div class="ft">
+        <div class="f1-logo">
+
+            <div class="foot_nav">
+
+            </div>
+            <div class="foot_nav_logo">
+                <a href="index.html"><img src="../images/logo/logo2.jpg" /></a>
+            <div class="foot_nav_p">
+           <span>
+              Copyright©Nantong Bai en Telecom Equipment Co., Ltd. All Rights Reserved.
+           </span>
+            </div>
+        </div>
+    </div>
+        <div class="f1_add">
+                <ul class="fl_add_ul">
+                    <li>
+                        <ul class="fl fl_add_li_ul ft_add_city">
+                            <li class="fl ">
+                                <img src="../images/footer/coordinate_pic2.png" class="footer_img footer_img_add_pic" />
+                            </li>
+
+                        </ul>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                       <ul class="add_ul_ft">
+
+                       </ul>
+                    </li>
+                </ul>
+        </div>
+        <div class="f1-us">
+            <div class="ft_us">
+                <div class="contact_us" >Pay attention to us</div>
+                <div class="contact_us_pic">
+                    <ul class="fl">
+                        <li class="fl">
+                            <div class="UsWeChat sina_1">
+                                <img src="../images/footer/sina_1.png" class="footer_img footer_img_pic" alt=""/>
+                            </div>
+                            <div class="UsWeChat_pic">
+                                <img src="../images/footer/sinaCode.png" class="footer_img footer_img_pic_1" alt=""/>
+                            </div>
+
+                        </li>
+                        <li class="fl">
+                            <div class="UsWeChat fr">
+                                <img src="../images/footer/wechat_1.png" class="footer_img footer_img_pic" alt=""/>
+                            </div>
+                            <div class="UsWeChat_pic fr">
+                                <img src="../images/footer/wechatCode.png" class="footer_img footer_img_pic_1" alt=""/>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script>
+function footNav(){
+    var ftNav=$('.foot_nav');
+    var ftNavLi=ftNav.children().children('li');
+    ftNavLi.hover(
+            function(){
+                $(this).css({ 'color':'#0abaf0'}).siblings().css({ 'color':'#ececec'});
+            },
+            function(){
+                ftNavLi.css({ 'color':'#ececec'});
+            }
+    )
+}
+footNav();
+function footerAdd(){
+    var addCity=$('.ft_add_city');
+    var addUl=$('.add_ul_ft');
+    var html='';
+    var j=1;
+    var contact=[
+        { "city":"Nantong" , "address":"No.3B building, Longyou Road, Changjiang Town, Rugao","tel":"13800138000","Email":"" }
+    ];
+    var contactPic={'city':'../images/footer/coordinate_pic2.png',
+        'address':'../images/footer/add_pic2.png',
+        'tel':'../images/footer/phone_pic2.png',
+        'Email':'../images/footer/email_pic2.png'}
+    $.each(contact, function(index, val) {
+        html+=`<li class="fl add_city" id="city${index+1}" >${contact[index].city}</li>`;
+    });
+    addCity.append(html);
+    Contact(j,contact[0],contactPic,addUl);
+    $('#city1').css({ 'color':'#0abaf0'});
+    addCity.on('click','.add_city',function(){
+            var i=$(this).index();
+            var data=contact[i-1];
+            Contact(i,data,contactPic,addUl)
+            $(this).css({
+                'color':'#0abaf0'
+            }).siblings().css({
+            'color':'#ececec'
+        })
+        })
+}
+footerAdd();
+function Contact(i,data,contactPic,addUl){
+    var htmlc='';
+    $.each(data, function(key, v) {
+        if(key!='city')
+            htmlc+=`
+
+                     <li>
+                    <ul class="fl fl_add_li_ul">
+                    <li class="fl ">
+                    <img src="${contactPic[key]}"  class="footer_img footer_img_add_pic"/>
+                    </li>
+                    <li class="fl">${v} </li>
+                    </ul>
+                    <div class="clear"></div>
+                    </li>
+                    `
+    });
+    addUl.html(htmlc);
+}
+
+
+</script>

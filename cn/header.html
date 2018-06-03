@@ -1,0 +1,212 @@
+﻿
+<div class="headerbg">
+
+    <div class="header">
+        <div id="logo"><a href="###">
+            <h1 style="display:none">南通百恩电信器材有限公司</h1>
+            <img src="../images/logo/logo1.jpg" /></a>
+        </div>
+
+        <div class="nav">
+            <div class="fr div_nav_language ">
+               <ul class="fr ">
+                   <li class="fr">
+                       <div class="share">
+                           <img src="../images/header/share.png" />
+
+                       </div>
+                       <div class="share_mack">
+                           <div class="share_logo">
+                               <ul class="fl">
+                                   <li class="fl">
+                                       <img src="../images/wechat_03.png" alt=""/>
+                                   </li>
+                                   <li class="fl">
+                                       <img src="../images/sina_03.png" alt=""/>
+                                   </li>
+                               </ul>
+
+                           </div>
+
+                       </div>
+                   </li>
+                   <li class="fr">
+                    <div class="nav_language">
+                            <p>
+                                中文 &nbsp; | &nbsp; <a href="index_en.html">ENGLISH</a>
+                            </p>
+                    </div>
+                   </li>
+               </ul>
+            </div>
+            <!-- headersline 处理服务模式导航条-->
+            <div class="fr div_nav">
+                <ul class="fr">
+                    <li class="dn_1 fl ">
+                        <span>
+                            公司首页
+
+                        </span>
+                        <div class="liDiv">
+
+                        </div>
+                    </li>
+                    <li class="dn_2 fl">
+                        <span>
+                            关于我们
+                        </span>
+                        <div class="liDiv">
+
+                        </div>
+                    </li>
+                    <li class="dn_3 fl">
+                        <span>
+                            产品中心
+                        </span>
+                        <div class="liDiv">
+
+                        </div>
+                    </li>
+                    <li class="dn_4 fl">
+                        <span>
+                            在线订单
+                        </span>
+                        <div class="liDiv">
+
+                        </div>
+                    </li>
+                    <li class="dn_5 fl">
+                        <span>
+                            联系我们
+                        </span>
+                        <div class="liDiv">
+
+                        </div>
+                    </li>
+                    <!--<li class="dn_6 fl">-->
+                    <!--<span>-->
+                    <!--中文| <span class="font_color_b">English</span>-->
+
+                    <!--</span>-->
+                    <!--<div class="divShare">-->
+                    <!--<img src="images/snia_pc.png" style="display: inline-block" alt=""/>-->
+                    <!--<img src="" alt=""/>-->
+                    <!--</div>-->
+                    <!-- -->
+
+
+                    <!--</li>-->
+
+                </ul>
+
+                <div class="nav_mask">
+
+                </div>
+
+            </div>
+
+            <div class="liMask">
+                <div class="div_qs">
+                    <div class="divQ">
+
+                    </div>
+                    <div class="divSina">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+<script>
+
+    function navEffect(){
+        var nav=$('.div_nav li');
+        var left;
+        var leftWidth;
+        var liIndex;
+        var dn_1= $('.dn_1');
+//        var divM=$('.nav li:first').children('div.liDiv');
+        dn_1.css({'color':'#0abaf0'});
+        nav.bind('mouseenter',function(){
+//            var divMask= $(this).children('div.liDiv');
+            liIndex=$(this).index();
+            left=100;
+            if(liIndex>4||liIndex<1){
+                leftWidth=0;
+                liIndex=0;
+
+            }else{
+                leftWidth=left*liIndex+'px';
+            }
+            navMask(leftWidth);
+//            if(!divMask.hasClass('nav_li_mask')){
+//                divMask.addClass('nav_li_mask');
+//                $(this).siblings().children('div.liDiv').removeClass('nav_li_mask');
+//
+//            }
+            Dn($(this));
+            if( liIndex==0) {
+
+                Dn(dn_1);
+            }
+
+
+        }).bind('mouseleave',function(){
+            leftWidth=0;
+            navMask(leftWidth);
+            $(this).children('div.liDiv').removeClass('nav_li_mask');
+            //divM.addClass('nav_li_mask');
+            //Dn(dn_1);
+            $(this).css({'color':'#000000'});
+            dn_1.css({'color':'#0abaf0'});
+        })
+    }
+    navEffect();
+    function navMask(lf){
+        $('.nav_mask').css({
+            left:lf,'-webkit-transition':'left 1s'
+        })
+    }
+    function Dn(dn){
+        dn.siblings().css({'color':'#000000'});
+        dn.css({'color':'#0abaf0'});
+    }
+
+function share() {
+    var share=$('.share');
+    var shareMack=$('.share_mack');
+    var shareLogo=$('.share_logo');
+    var  shareNone=function(){
+        shareMack.css({
+             height: '0px','-webkit-transition':'height 3s'
+             });
+    } ;
+    var  shareBlock=function(){
+        shareMack.css({
+            height: '55px','-webkit-transition':'height 2s'
+        });
+    }
+    share.bind('mouseenter','img',function(){
+        shareBlock();
+
+    }).bind('mouseleave','img',function(){
+         timer=setTimeout(shareNone,"3000");
+
+    })
+    shareLogo.bind('mouseenter',function(){
+        shareMack.css({  height: '55px'});
+        clearTimeout(timer);
+    }).bind('mouseleave',function(){
+        timer=setTimeout(shareNone,"3000");
+    })
+
+}
+share();
+
+</script>
