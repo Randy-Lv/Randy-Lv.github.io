@@ -1,0 +1,81 @@
+﻿
+<div class="know_us">
+    <div class="know_us_title">
+        <div  class="know_us_title_text" >
+            <p>
+                — 了解我们 —
+            </p>
+        </div>
+
+    </div>
+    <div class="know_us_content">
+        <ul class="fl">
+            <li class="fl ">
+                <i class="automata"></i>
+                <!--<img src="../images/automata.png" alt=""/>-->
+            </li>
+            <li class="fl">
+                <div class="know_content">
+                    <p class="know_content_title" >
+                        产品1
+                    </p>
+                    <p class="know_content_text_title">
+                        重点产品介绍
+                        <br/>
+                        
+                        <br/>
+
+                        重点产品介绍
+
+                    </p>
+
+                </div>
+                </li>
+            <li class="fl">
+                <div class="know_content">
+                    <p class="know_content_title" >
+                        产品2
+                    </p>
+                    <p class="know_content_text_title">
+
+                         重点产品介绍
+                        <br/>
+                        重点产品介绍
+                        <br/>
+                        重点产品介绍
+                        <br/>
+                        重点产品介绍
+
+                    </p>
+
+                </div>
+            </li>
+            <li class="fl">
+                <i class="access_machine"></i>
+                <!--<img src="../images/access_machine.png" alt=""/>-->
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+    $(function(){
+
+        var knowImg=$('.know_us_content li i');
+
+        knowImg.hover(
+                function(){
+                    $(this).css({
+                        'transform': 'scale(1.1,1.1)',
+                        transition:'transform  1s'
+                    })
+                },
+                function(){
+                    $(this).css({
+                        'transform': 'scale(1,1)',
+                        transition:'transform  1s'
+                    })
+                }
+        )
+
+    })
+</script>
