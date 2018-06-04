@@ -1,4 +1,5 @@
-﻿$(function(){	
+/* DaTouWang URL: www.datouwang.com */
+$(function(){	
 	$('.alert-api-list').css('height',$(window).height());
    	$(window).scroll(function(){
 

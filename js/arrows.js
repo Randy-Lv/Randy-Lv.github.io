@@ -1,3 +1,6 @@
+/**
+ * Created by LX on 2017/9/5.
+ */
 $(function () {
     $('#arrows').hover(
         function () {
