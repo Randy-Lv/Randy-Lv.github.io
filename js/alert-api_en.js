@@ -1,5 +1,4 @@
-/* DaTouWang URL: www.datouwang.com */
-$(function(){	
+﻿$(function(){	
 	$('.alert-api-list').css('height',$(window).height());
    	$(window).scroll(function(){
 
