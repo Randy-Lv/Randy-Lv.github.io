@@ -98,7 +98,7 @@ transition:text-decoration 2s;
 .prod_left{ float:left; width:200px; background-color:#3498db; padding:10px 20px;}
 .prod_left_box{ }
 .prod_left_list1{ padding:5px 0;}
-.prod_left_list1 a{ display:block; padding-left:25px; line-height:30px; background:url(../images/prod_left_list_bg.png) no-repeat scroll left center; color:#ffffff; font-size:14px;}
+.prod_left_list1 a{ display:block; padding-left:25px; line-height:30px; color:#ffffff; font-size:14px;}
 .prod_left_line{border-bottom:1px solid #ffffff;}
 .prod_right{ float:right; width:1020px;}
 .prod_box{ border:1px solid #3498db; padding-bottom:10px; margin-bottom:20px; width:231px;}

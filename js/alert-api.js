@@ -64,9 +64,12 @@ $(function(){
 		 
 			$(document).delegate(".prod_box",'click',function(e){
 				var href =$(this).attr("src");
-				products_his = $(".prod_right>table").clone(true);
-				products_his=products_his[0];
-				$(".prod_right").load(href);
+				if(href !="")
+				{
+					products_his = $(".prod_right>table").clone(true);
+					products_his=products_his[0];
+					$(".prod_right").load(href);
+				}
 			});
 		})
 	 })		
