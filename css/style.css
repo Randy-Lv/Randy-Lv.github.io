@@ -21,7 +21,6 @@ input:focus{outline:none;}
 .clear{ clear:both;}
 .clr{ clear:both;height:0; line-height:0; font-size:0; overflow:hidden;}
 body{
-    width:98%;
 	margin:0 auto;
 	font-size: 12px;
 	padding: 0px;

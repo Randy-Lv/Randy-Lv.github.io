@@ -42,7 +42,7 @@ $(function(){
 			'content' :  $("#products_show"),
 			'modal'   : true,
 			'contentTextAlign' : 'left',
-			'width'   : '73%',
+			'width'   : '88%',
 			'height'  : '88%',
 			'animateType': 'scale',
 		})

@@ -1,17 +1,5 @@
 ﻿
 <div id="flashBg">
-
-    <!--<div id="wrapper">-->
-        <!--<div class="slider-wrapper theme-default">-->
-            <!--<div id="slider" class="nivoSlider">-->
-                <!--&lt;!&ndash;<img src="images/banner/banner1.jpg" data-thumb="images/banner/banner1.jpg" style="height:508px;width: 100%" alt="" />&ndash;&gt;-->
-                <!--<img src="../images/banner/banner2.jpg" data-thumb="images/banner/banner1.jpg"  style="height:578px;width: 100%"  alt="" />-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div id="wrapp">-->
-
-    <!--</div>-->
     <div class="banner-silder">
         <div class="banner">
             <ul>
@@ -33,11 +21,8 @@
         var images_height = '578px';
         // array of images
         var images_url = [
-//            '../images/banner/banner1.jpg',
-            '../images/banner/banner2.jpg',
-            '../images/banner/banner3.jpg',
+			'../images/banner/banner3.jpg',
             '../images/banner/banner4.jpg'
-
         ];
         var images_count = images_url.length;
 
@@ -139,8 +124,9 @@
         }
 
         function nextPlay(){
+
             num++;
-            if(num>images_count){
+            if(num> images_count){
                 $('.banner ul').css({'marginLeft':0}).stop().animate({'marginLeft':-window_width},1000);
                 num=1;
             }else{
@@ -154,14 +140,14 @@
             }
         }
 
-        timer = setInterval(nextPlay,2000);
+        timer = setInterval(nextPlay,6000);
 
-        // auto pause on mouse enter
+        //auto pause on mouse enter
         $('.banner').mouseenter(function(){
             clearInterval(timer);
             $('.banner i').fadeIn();
         }).mouseleave(function(){
-            timer = setInterval(nextPlay,2000);
+            timer = setInterval(nextPlay,6000);
             $('.banner i').fadeOut();
         });
 
