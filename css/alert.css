@@ -12,7 +12,8 @@ body{
   height:100%;
   background: #000;
   opacity: 0.6;
-   filter: alpha(opacity=60);
+  filter: alpha(opacity=60);
+  cursor:pointer;
 }
 .alert-container{
   display: inline-block;
