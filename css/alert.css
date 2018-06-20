@@ -97,9 +97,9 @@ body{
 }
 .alert-btn-close{
   position: absolute;
-  right:10px;
+  right:20px;
   top:3px;
-  font-size: 24px;
+  font-size: 44px;
   cursor: pointer;
   z-index: 1000;
 }
