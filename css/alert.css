@@ -100,10 +100,11 @@ body{
   position: absolute;
   right:20px;
   top:3px;
-  font-size: 44px;
+  font-size: 54px;
   cursor: pointer;
   z-index: 1000;
   font-weight: bold;
+  color: red;
 }
 
 .alert-container-black{
