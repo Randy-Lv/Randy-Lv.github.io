@@ -92,7 +92,7 @@ var jqueryAlert = function(opts){
 			$container.css({
 				'position' : option.position,
 				'left'     : '50%',
-				'top'      : '50%',
+				'top'      : 100,
 				'z-index'  : zIndex,
 			})
 		}
@@ -100,7 +100,7 @@ var jqueryAlert = function(opts){
 			$container.css({
 				'position' : option.position,
 				'left'     : $(window).width()/2,
-				'top'      : $(window).height()/2 + $(window).scrollTop(),
+				'top'      : 100,
 				'z-index'  : zIndex,
 			})
 		}
@@ -140,7 +140,7 @@ var jqueryAlert = function(opts){
 		}
 
 		if(option.title != ''){
-			$content.css('padding-top','42px');
+			$content.css('padding-top','40px');
 		}
 
 		if(dialog.buttonsLength <= 0 && option.title == ''){
@@ -149,8 +149,7 @@ var jqueryAlert = function(opts){
 
 		 // 设置定位
 		$container.css({
-			'margin-left' : -parseInt($container.css('width'))/2,
-			'margin-top' : -parseInt($container.css('height'))/2+50,
+			'margin-left' : -parseInt($container.css('width'))/2
 		});
 
 		if(option.animateType == 'scale'){
