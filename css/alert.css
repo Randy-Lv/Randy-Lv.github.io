@@ -103,6 +103,7 @@ body{
   font-size: 44px;
   cursor: pointer;
   z-index: 1000;
+  font-weight: bold;
 }
 
 .alert-container-black{

@@ -150,7 +150,7 @@ var jqueryAlert = function(opts){
 		 // 设置定位
 		$container.css({
 			'margin-left' : -parseInt($container.css('width'))/2,
-			'margin-top' : -parseInt($container.css('height'))/2+12,
+			'margin-top' : -parseInt($container.css('height'))/2+50,
 		});
 
 		if(option.animateType == 'scale'){
