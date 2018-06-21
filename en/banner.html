@@ -21,14 +21,13 @@
         var images_height = '578px';
         // array of images
         var images_url = [
-            '../images/banner/banner3.jpg',
+			'../images/banner/banner3.jpg',
             '../images/banner/banner4.jpg'
-
         ];
         var images_count = images_url.length;
 
         // create nodes
-        for(var j=0;j<images_count;j++){
+        for(var j=0;j<images_count+1;j++){
             $('.banner ul').append('<li></li>')
         }
 
@@ -64,7 +63,7 @@
 
         $('.banner').css('height',images_height);
 
-        $('.banner ul').css({'width':(images_count)*100+'%',
+        $('.banner ul').css({'width':(images_count+1)*100+'%',
                     'float':'left',
                     'position':'ab'
         });
@@ -125,8 +124,9 @@
         }
 
         function nextPlay(){
+
             num++;
-            if(num>images_count){
+            if(num> images_count){
                 $('.banner ul').css({'marginLeft':0}).stop().animate({'marginLeft':-window_width},1000);
                 num=1;
             }else{
@@ -140,14 +140,14 @@
             }
         }
 
-        timer = setInterval(nextPlay,2000);
+        timer = setInterval(nextPlay,6000);
 
-        // auto pause on mouse enter
+        //auto pause on mouse enter
         $('.banner').mouseenter(function(){
             clearInterval(timer);
             $('.banner i').fadeIn();
         }).mouseleave(function(){
-            timer = setInterval(nextPlay,2000);
+            timer = setInterval(nextPlay,6000);
             $('.banner i').fadeOut();
         });
 
