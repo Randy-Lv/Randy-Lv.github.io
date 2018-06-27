@@ -62,14 +62,15 @@ $(function(){
 		 
 		$(".prod_right").load("cn/product/types/type" + index + ".html",function() {
 		 
-			$(document).delegate(".prod_box",'click',function(e){
+			$(".prod_box").on('click',function(e){
 				var href =$(this).attr("src");
 				if(href !="")
 				{
 					products_his = $(".prod_right>table").clone(true);
 					products_his=products_his[0];
-					$(".prod_right").load(href);
+					$(".alert-content .prod_right").load(href);
 				}
+				e.stopPropagation();
 			});
 		})
 	 })		
