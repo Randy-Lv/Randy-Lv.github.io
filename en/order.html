@@ -1,0 +1,193 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>RF Connector|Feeder Cable Clamps|Grounding Kits|Securing clip|Coax Accessories--Nantong Bai en Telecom Equipment Co., Ltd.</title>
+    <meta name="description" content="RF Connector|Feeder Cable Clamps|Grounding Kits|Securing clip|Coax Accessories--Nantong Bai en Telecom Equipment Co., Ltd." lang="en">
+    <meta name="keywords" content="RF Connector|Feeder Cable Clamps|Grounding Kits|Securing clip|Coax Accessories--Nantong Bai en Telecom Equipment Co., Ltd." lang="en">
+    <meta name="classification" content="business">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="ROBOTS" content="NOINDEX,NOFOLLOW" />
+
+    <link rel="stylesheet" href="/css/cssReset.css"/>
+    <link rel="stylesheet" href="/css/index_style.css"/>
+    <link rel="stylesheet" href="/css/style.css"  />   
+    <script src="/js/jquery-1.9.0.min.js"></script>
+
+    <style type="text/css">
+        .tip {
+            border-color: red;
+        }
+
+        tr {
+            height: 40px;
+        }
+
+        .tdCol1 {
+            width: 30%;
+            text-align: right;
+        }
+
+        .tdCol2 {
+            width: 70%;
+        }
+
+        .button, .button:visited {
+            background: #222;
+            padding: 10px 16px;
+            color: #fff;
+            text-decoration: none;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+            -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+            text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+            border-bottom: 1px solid rgba(0,0,0,0.25);
+            position: relative;
+            cursor: pointer;
+        }
+        .tdCol2>input {
+            height: 26px;
+            line-height: 26px;
+        }           
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            $("#header").load('/cn/header.html', function(){
+                $('#header').on('click','.div_nav ul li' ,function(){
+                    window.location="/"
+                })
+                $("#neworder").removeAttr('target');
+            });
+            
+            $("#btnAdd").click(function () {
+
+                var checkInput = true;
+
+                $(":text").each(function () {
+                    if ($.trim($(this).val()) == "") {
+                        this.focus();
+                        $(this).addClass("tip");
+                        checkInput = false;
+                        return false;
+                    }
+                    else {
+                        $(this).removeClass("tip");
+                    }
+                })
+                if (checkInput) {
+                    //$("#OrderForm").submit();
+                    $.ajax({
+                        url: "/Home/Add",
+                        type: "POST",
+                        data: $("FORM").serialize(),
+                        success: function (data) {
+                            $("#resultTips").text(data);
+                        },
+                        error: function (e) {
+
+                        }
+                    })
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="header">
+    </div>
+
+    <div  style="margin-top:50px;">
+        <div style="text-align:center;">
+            <p>
+                Dear ：<br />
+               　Please fill your inquiry,(The&quot;<font color="#cc0000">*</font>&quot;is required)</p>
+
+            </p>
+        </div>
+
+        <div>
+            <form action="/add" method="post" name="OrderForm" id="OrderForm">
+                <input name="pid" type="hidden" value="" />
+                <table style="width:80%;" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td class="tdCol1"><div>Product Name：</div></td>
+                            <td class="tdCol2">
+                                <input type="text" style="float:left; width:90%;" name="Title" value="" />
+                                <font color="#cc0000" style="float:left;">* </font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdCol1"><div>Quantity：</div></td>
+                            <td class="tdCol2">
+                                <input type="text" style="float:left; width:90%;" name="Num" value="" />
+                                <font color="#cc0000" style="float:left;">* </font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdCol1"><div>Company Name：</div></td>
+                            <td class="tdCol2">
+                                <input type="text" style="float:left; width:90%;" name="Company" value="" />
+                                <font color="#cc0000" style="float:left;">* </font>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tdCol1"><div>Contacts：</div></td>
+                            <td class="tdCol2">
+                                <input type="text" style="float:left;width:90%;" name="UserName" />
+                                <font color="#cc0000" style="float:left;">* </font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdCol1"><div>TEL ：</div></td>
+                            <td class="tdCol2">
+                                <input type="text" style="float:left;width:90%;" name="Mobile" />
+                                <font color="#cc0000" style="float:left;">* </font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdCol1"><div>FAX ：</div></td>
+                            <td class="tdCol2">
+                                <input type="text" style="float:left; width:90%;" name="Fax" value="" />
+                                <font color="#cc0000" style="float:left;">* </font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdCol1"><div>Remarks：</div></td>
+                            <td class="tdCol2">
+                                <label>
+                                    <textarea name="Remark" style="width:90%" rows="5"></textarea>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr style="height:60px;">
+                            <td class="tdCol1"><div>Validate Code：</div></td>
+                            <td class="tdCol2">
+
+                                <input style="float:left; margin-right:10px; width:60px; margin-top:10px;" type="text" name="code" value="" />
+                                <img id="imgRefresh" style="cursor:pointer;float:left; width:100px; height:40px;" title="Refresh" src="/Common/GetValidateCode" onclick="this.src = '/Common/GetValidateCode?' + Math.random();" />
+                                <div class="clr"></div>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td colspan="2" style="text-align:center;">
+                                <div style="padding:10px 0;">
+                                    <input type="button" value="Submit" id="btnAdd" class="button">
+                                    <input type="reset" value="Reset" style=" margin-left:10%;" class="button">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            <p id="resultTips" style="text-align:center;color:red;font-weight:bold;font-size:20px;"></p>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
