@@ -98,7 +98,7 @@
 <div id="header">
 </div>
 <div>
-    <div style="text-align:center;">
+    <div class="orderTips">
         <p>
             尊敬的客户：您好！<br />
             请填写您的咨询信息，(&quot;<font color="#cc0000">*</font>&quot;为必填项)
@@ -113,21 +113,21 @@
                     <tr>
                         <td class="tdCol1"><div>产品名称：</div></td>
                         <td class="tdCol2">
-                            <input type="text" style="float:left; width:90%;" name="Title" value="" />
+                            <input type="text" style="float:left; width:90%;" name="Title" value="" maxlength="50"/>
                             <font color="#cc0000" style="float:left;">* </font>
                         </td>
                     </tr>
                     <tr>
                         <td class="tdCol1"><div>订购数量：</div></td>
                         <td class="tdCol2">
-                            <input type="text" style="float:left; width:90%;" name="Num" value="" />
+                            <input type="text" style="float:left; width:90%;" name="Num" value="" maxlength="5"/>
                             <font color="#cc0000" style="float:left;">* </font>
                         </td>
                     </tr>
                     <tr>
                         <td class="tdCol1"><div>公司名称：</div></td>
                         <td class="tdCol2">
-                            <input type="text" style="float:left; width:90%;" name="Company" value="" />
+                            <input type="text" style="float:left; width:90%;" name="Company" value="" maxlength="50"/>
                             <font color="#cc0000" style="float:left;">* </font>
                         </td>
                     </tr>
@@ -135,21 +135,21 @@
                     <tr>
                         <td class="tdCol1"><div>联&nbsp;&nbsp;系&nbsp;&nbsp;人：</div></td>
                         <td class="tdCol2">
-                            <input type="text" style="float:left;width:90%;" name="UserName" />
+                            <input type="text" style="float:left;width:90%;" name="UserName" maxlength="25"/>
                             <font color="#cc0000" style="float:left;">* </font>
                         </td>
                     </tr>
                     <tr>
                         <td class="tdCol1"><div>联系电话：</div></td>
                         <td class="tdCol2">
-                            <input type="text" style="float:left;width:90%;" name="Mobile" />
+                            <input type="text" style="float:left;width:90%;" name="Mobile" maxlength="20"/>
                             <font color="#cc0000" style="float:left;">* </font>
                         </td>
                     </tr>
                     <tr>
                         <td class="tdCol1"><div>传&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真：</div></td>
                         <td class="tdCol2">
-                            <input type="text" style="float:left; width:90%;" name="Fax" value="" />
+                            <input type="text" style="float:left; width:90%;" name="Fax" value="" maxlength="20"/>
                             <font color="#cc0000" style="float:left;">* </font>
                         </td>
                     </tr>
@@ -157,7 +157,7 @@
                         <td class="tdCol1"><div>其他说明：</div></td>
                         <td class="tdCol2">
                             <label>
-                                <textarea name="Remark" style="width:90%" rows="5"></textarea>
+                                <textarea name="Remark" style="width:90%" rows="5" maxlength="300"></textarea>
                             </label>
                         </td>
                     </tr>

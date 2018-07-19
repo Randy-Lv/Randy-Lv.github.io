@@ -638,7 +638,8 @@ div.liMask {
     height: 280px;
     width: 100%;
     background-color: #343434;
-    line-height: 22px;
+    line-height: 28px;
+    font-size: 16px;
 }
 
 .footer .ft {
@@ -658,11 +659,7 @@ div.liMask {
 }
 
 .f1-logo {
-    width: 50%;
-}
-
-.f1_add {
-    width: 520px;;
+    width: 56%;
 }
 
 .f1-us {
@@ -672,10 +669,6 @@ div.liMask {
 .ft_us {
     width: 250px;
     float: right;
-}
-.foot_nav {
-    width: 100%;
-    padding-bottom: 50px;
 }
 
 .foot_nav_logo {
@@ -734,9 +727,7 @@ div.liMask {
 
 .fl_add_li_ul li {
     padding-right: 35px;
-    line-height: 22px;
     vertical-align: middle;
-    cursor: pointer;
 }
 /*arrows*/
 #arrows{

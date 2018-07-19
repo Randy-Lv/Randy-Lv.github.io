@@ -133,3 +133,11 @@ span.marginleft
 	text-indent:24px;
 }
 .about_us .contact_us .product_center{ margin-top: 70px; }
+.orderTips
+{
+	margin-left: 10%;
+    font-weight: bold;
+    color: rebeccapurple;
+    font-size: 14px;
+    text-indent: -30px;
+}
