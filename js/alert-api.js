@@ -42,7 +42,7 @@ $(function(){
 			'content' :  $("#products_show"),
 			'modal'   : true,
 			'contentTextAlign' : 'left',
-			'width'   : '88%',
+			'width'   : '72%',
 			'height'  : '88%',
 			'animateType': 'scale',
 		})
@@ -62,16 +62,15 @@ $(function(){
 		 
 		$(".prod_right").load("cn/product/types/type" + index + ".html",function() {
 		 
-			$(".prod_box").on('click',function(e){
-				var href =$(this).attr("src");
-				if(href !="")
-				{
-					products_his = $(".prod_right>table").clone(true);
-					products_his=products_his[0];
-					$(".alert-content .prod_right").load(href);
-				}
-				e.stopPropagation();
-			});
+			$(document).on('click',".prod_box",function(){
+					var href =$(this).attr("src");
+					if(href !="")
+					{
+						products_his = $(".prod_right>table").clone(true);
+						products_his=products_his[0];
+						$(".alert-content .prod_right").load(href);
+					}
+			})
 		})
-	 })		
+	 })
 })

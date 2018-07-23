@@ -105,7 +105,7 @@ transition:text-decoration 2s;
 .prod_title{ background-color:#c2e0f4; line-height:39px; text-align:center;}
 
 .pdetail_left{  width:400px; padding-right:50px;}
-.pdetail_left img{ width:390px; border:1px solid #ccc; padding:4px;}
+.pdetail_left img{ width:360px; border:1px solid #ccc; padding:4px;}
 .pdetail_right{  width:550px; font-size:16px; line-height:55px;}
 .pdetail_tr1{ background-color:#3498db;}
 .pdetail_tr2{ background-color:#E3E3E3;}
