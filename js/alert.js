@@ -112,9 +112,7 @@ var jqueryAlert = function(opts){
 			$container.css('width',$container[0].clientWidth + 10);
 		}
 
-		if(parseInt($(window).height()) <=  parseInt($container.css('height'))){
-			$container.css('height',$(window).height());
-		}
+
 
 		// 设置class
 		(!!option.className) && $container.addClass(option.className);
