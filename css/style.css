@@ -93,13 +93,13 @@ transition:text-decoration 2s;
 
 .about_img{background:url(../images/about_img.jpg) no-repeat scroll center; height:384px;}
 
-.product{ padding:0 10px;width:1280px;}
-.prod_left{ float:left; width:200px; background-color:#3498db; padding:10px 20px;}
+.product{ padding:0 10px;width:96%;}
+.prod_left{ float:left; width:15%; background-color:#3498db; padding:10px 20px;}
 .prod_left_box{ }
 .prod_left_list1{ padding:5px 0;}
 .prod_left_list1 a{ display:block; padding-left:25px; line-height:30px; color:#ffffff; font-size:14px;}
 .prod_left_line{border-bottom:1px solid #ffffff;}
-.prod_right{ float:right; width:1020px;}
+.prod_right{ float:right; width:80%;}
 .prod_box{ border:1px solid #3498db; padding-bottom:10px; margin-bottom:20px; width:231px;}
 .mprod_img img,.prod_img img{ width:228px; height:170px;}
 .prod_title{ background-color:#c2e0f4; line-height:39px; text-align:center;}
