@@ -5,7 +5,7 @@
 
 .product{ padding:0 10px;width:96%;}
 .prod_left{ float:left; width:16%; background-color:#3498db; padding:10px 20px;}
-.prod_left_box{ padding:5px 0;}
+.prod_left_box{ padding:6px 0;}
 .prod_left_box a{ display:block; text-align: center; line-height:30px; color:#ffffff; font-size:14px;border-bottom:1px solid #ffffff;}
 .prod_right{ float:right; width:80%;}
 .prod_box{ border:1px solid #3498db; padding-bottom:10px; margin-bottom:20px; width:231px;}
@@ -48,4 +48,7 @@ span.marginleft
     color: rebeccapurple;
     font-size: 14px;
     text-indent: -30px;
+}
+td {
+    line-height: 26px;
 }
