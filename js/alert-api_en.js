@@ -33,8 +33,13 @@ $(function(){
 		$("#products_show").load("en/product/product.html",function(){
 		
 		if(M.dialog8){
-			$("#products_show .prod_left_box").get(index).click();
-			return M.dialog8.show();
+			var _this =$(".alert-content>#products_show .prod_left_box").get(index);
+			$(_this).click();
+			$(_this).parent().find('a').css({'background-color':''});
+			$(_this).find('a').css({'background-color':'green'});
+
+			M.dialog8.show();
+			return
 		}
 		M.dialog8 = jqueryAlert({
 			'style'   : 'pc',
@@ -59,7 +64,9 @@ $(function(){
 
 	$(document).delegate(".prod_left_box",'click',function(){
 		var index =$(this).index()+1;
-		 
+		$(this).parent().find('a').css({'background-color':''});
+		$(this).find('a').css({'background-color':'green'});
+
 		$(".prod_right").load("en/product/types/type" + index + ".html",function() {
 			$(document).on('click',".prod_box",function(){
 					var href =$(this).attr("src");
