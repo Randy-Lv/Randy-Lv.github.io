@@ -315,9 +315,8 @@ div.liMask {
 .about_introduction{
     width:900px;
     margin: auto;
-    font-size:12px;
+    font-size:14px;
     color: #5b5b5b;
-    text-align: left;
     line-height: 28px;
     text-indent: 24px;
     text-align: left;
@@ -637,7 +636,7 @@ div.liMask {
 .footer {
     background-color: #343434;
     line-height: 28px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .footer .ft {
@@ -654,10 +653,16 @@ div.liMask {
     height: auto;
     padding: 50px 5px 0;
     vertical-align: top;
-    flex-grow : 1;
 }
+
 .f1-logo{
-    flex-grow : 2;
+    flex-grow : 5;
+}
+.f1_add{
+    flex-grow : 3;
+}
+.f1-us{
+    flex-grow : 1;
 }
 .foot_nav_logo {
     padding-bottom: 30px;
@@ -715,7 +720,7 @@ div.liMask {
 }
 
 .fl_add_li_ul li {
-    padding-right: 35px;
+    padding-right: 16px;
     vertical-align: middle;
 }
 /*arrows*/
