@@ -647,6 +647,7 @@ div.liMask {
     background-color: #343434;
     display: -webkit-flex; 
     display: flex; 
+    min-width: 1200px;
 }
 
 .f1-logo, .f1_add, .f1-us {
