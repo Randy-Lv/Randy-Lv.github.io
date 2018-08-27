@@ -650,8 +650,7 @@ div.liMask {
 }
 
 .f1-logo, .f1_add, .f1-us {
-    height: auto;
-    padding: 50px 5px 0;
+    padding: 20px 5px 6px;
     vertical-align: top;
     flex-grow : 1
 }
