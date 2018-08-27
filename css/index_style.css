@@ -653,13 +653,15 @@ div.liMask {
     height: auto;
     padding: 50px 5px 0;
     vertical-align: top;
+    flex-grow : 1
 }
 
 .f1-logo{
-    flex-grow : 5;
+    flex-grow : 3;
+    text-align: center;
 }
 .f1_add{
-    flex-grow : 3;
+    flex-grow : 2;
 }
 .f1-us{
     flex-grow : 1;
